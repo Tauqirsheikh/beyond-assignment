@@ -16,7 +16,7 @@ const OrganizationForm = ({ formik }) => {
                     <TextBox
                         fullWidth
                         name="companyName"
-                        placeholder="Enter Your Company Name"
+                        placeholder="Enter your company name"
                         size="small"
                         InputProps={{ disableUnderline: true }}
                         onChange={(e) => {
@@ -35,7 +35,7 @@ const OrganizationForm = ({ formik }) => {
                     <TextBox
                         fullWidth
                         name="websiteUrl"
-                        placeholder="Enter Your Website Url"
+                        placeholder="Enter your website url"
                         size="small"
                         InputProps={{ disableUnderline: true }}
                         onChange={formik.handleChange}
@@ -71,7 +71,7 @@ const OrganizationForm = ({ formik }) => {
                         sx={{
                             background: "#12372A",
                             color: "#ffffff",
-                            padding: "8px 16px 8px 16px",
+                            textTransform: "capitalize",
                             "&:hover": {
                                 background: "#12372A",
                                 color: "#ffffff"

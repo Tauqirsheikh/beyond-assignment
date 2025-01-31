@@ -6,8 +6,8 @@ import {
   Box,
   IconButton,
 } from "@mui/material";
-import { FormControl } from "./index";
 import PropTypes from "prop-types";
+import { FormInputField } from "./style";
 
 const TextBox = (props) => {
   const {
@@ -36,7 +36,7 @@ const TextBox = (props) => {
   } = props;
 
   return (
-    <FormControl
+    <FormInputField
       key={`key${name}`}
       error={helperText ? true : false}
       fullWidth={fullWidth}
@@ -100,7 +100,7 @@ const TextBox = (props) => {
           </FormHelperText>
         )}
       </Box>
-    </FormControl>
+    </FormInputField>
   );
 };
 

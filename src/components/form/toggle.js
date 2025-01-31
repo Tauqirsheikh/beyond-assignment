@@ -1,5 +1,5 @@
 import { FormHelperText, Icon, InputAdornment, TextField, Box } from '@mui/material';
-import { FormControl } from './index';
+import { FormInputField } from "./style";
 import PropTypes from 'prop-types';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
@@ -18,7 +18,7 @@ const ToggleBox = (props) => {
     } = props;
 
     return (
-        <FormControl key={`key${name}`} error={helperText ? true : false} fullWidth={fullWidth}>
+        <FormInputField key={`key${name}`} error={helperText ? true : false} fullWidth={fullWidth}>
             <FormControlLabel
                 control={
                     <Switch
@@ -31,7 +31,7 @@ const ToggleBox = (props) => {
                 }
                 label={label}
             />
-        </FormControl>
+        </FormInputField>
     );
 };
 

@@ -17,7 +17,7 @@ const RegistrationForm = ({ formik, handleGoogleSuccess, handleGoogleFailure }) 
                     <TextBox
                         fullWidth
                         name="name"
-                        placeholder="Enter Your Name"
+                        placeholder="Enter your name"
                         size="small"
                         InputProps={{ disableUnderline: true }}
                         onChange={(e) => {
@@ -37,7 +37,7 @@ const RegistrationForm = ({ formik, handleGoogleSuccess, handleGoogleFailure }) 
                         fullWidth
                         name="email"
                         type="email"
-                        placeholder="Enter Your Email"
+                        placeholder="example@gmail.com"
                         size="small"
                         InputProps={{ disableUnderline: true }}
                         onChange={formik.handleChange}
@@ -55,7 +55,7 @@ const RegistrationForm = ({ formik, handleGoogleSuccess, handleGoogleFailure }) 
                         fullWidth
                         name="password"
                         size="small"
-                        placeholder="Enter Password"
+                        placeholder="Password"
                         value={formik?.values?.password}
                         onChange={(e) => {
                             formik.setFieldValue(
@@ -75,8 +75,10 @@ const RegistrationForm = ({ formik, handleGoogleSuccess, handleGoogleFailure }) 
                         fullWidth
                         loading={formik.isSubmitting}
                         sx={{
+                            mt: 1,
                             background: "#12372A",
                             color: "#ffffff",
+                            textTransform: "capitalize",
                             "&:hover": {
                                 background: "#12372A",
                                 color: "#ffffff"

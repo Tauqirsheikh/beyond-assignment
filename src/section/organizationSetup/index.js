@@ -26,10 +26,10 @@ const OrganizationSetup = ({ onNext, onBack }) => {
             const errors = {};
 
             if (!values.companyName) {
-                errors.companyName = "Company Name is required";
+                errors.companyName = "Company name is required";
             }
             if (!values.websiteUrl) {
-                errors.websiteUrl = "Website Url is required";
+                errors.websiteUrl = "Website url is required";
             }
 
             return errors;

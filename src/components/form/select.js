@@ -1,5 +1,5 @@
 import { FormHelperText, InputLabel, MenuItem, Select } from "@mui/material";
-import { FormControl } from "./index";
+import { FormInputField } from "./style";
 import PropTypes from "prop-types";
 const SelectBox = props => {
   const {
@@ -14,7 +14,7 @@ const SelectBox = props => {
   } = props;
 
   return (
-    <FormControl
+    <FormInputField
       key={`key${name}`}
       error={helperText ? true : false}
       fullWidth={fullWidth}
@@ -48,7 +48,7 @@ const SelectBox = props => {
         <FormHelperText>
           {helperText}
         </FormHelperText>}
-    </FormControl>
+    </FormInputField>
   );
 };
 

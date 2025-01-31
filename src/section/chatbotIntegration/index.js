@@ -122,7 +122,13 @@ const ChatbotIntegration = ({ onNext, onBack }) => {
                                 }}
                             />
                         </Box>
-                        <Button variant="contained" style={{ marginTop: "1rem" }}>Mail instructions</Button>
+                        <Button variant="contained" sx={{
+                            marginTop: "1rem",
+                            "&:hover": {
+                                background: "#12372A",
+                                color: "#ffffff"
+                            }
+                        }}>Mail instructions</Button>
                     </DialogContent>
                 </Dialog>
 
@@ -160,9 +166,22 @@ const ChatbotIntegration = ({ onNext, onBack }) => {
                             <Typography>Integration is successful! 🎉</Typography>
                             <Typography>Explore the admin panel or start chatting with your chatbot.</Typography>
                         </DialogContent>
-                        <DialogActions sx={{ justifyContent: "left" }}>
+                        <DialogActions sx={{
+                            justifyContent: {
+                                lg: "left",
+                                md: "left",
+                                sm: "center",
+                                xs: "center"
+                            }
+                        }}>
                             <Stack direction={{ lg: "row", md: "row", sm: 'row', xs: "column" }} spacing={1.5} mb={2}>
-                                <Button variant="contained" color="primary">Explore Admin Panel</Button>
+                                <Button variant="contained" color="primary" sx={{
+                                    "&:hover": {
+                                        background: "#12372A",
+                                        color: "#ffffff"
+                                    }
+                                }}>Explore Admin Panel</Button>
+
                                 <Button variant="outlined" color="primary">Start Talking to Your Chatbot</Button>
                                 <Button variant="contained" color="secondary">Share on Social Media</Button>
                             </Stack>

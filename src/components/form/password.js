@@ -1,6 +1,6 @@
 import { FormHelperText, Icon, InputAdornment, TextField } from "@mui/material";
 import React from "react";
-import { FormControl } from "./index";
+import { FormInputField } from "./style";
 import PropTypes from "prop-types";
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
@@ -22,7 +22,7 @@ const PasswordBox = props => {
   } = props;
 
   return (
-    <FormControl
+    <FormInputField
       key={`key${name}`}
       error={helperText ? true : false}
       fullWidth={fullWidth}
@@ -55,7 +55,7 @@ const PasswordBox = props => {
         <FormHelperText>
           {helperText}
         </FormHelperText>}
-    </FormControl>
+    </FormInputField>
   );
 };
 
