@@ -1,9 +1,9 @@
-import Head from "next/head";
-import { Box, Typography } from "@mui/material";
-import OrganizationSetup from "@/section/organizationSetup";
 import ChatbotIntegration from "@/section/chatbotIntegration";
-import { useState } from "react";
+import OrganizationSetup from "@/section/organizationSetup";
 import RegistrationSection from "@/section/registrationForm";
+import { Box, Typography } from "@mui/material";
+import Head from "next/head";
+import { useState } from "react";
 
 export default function Home() {
   const [step, setStep] = useState(0);

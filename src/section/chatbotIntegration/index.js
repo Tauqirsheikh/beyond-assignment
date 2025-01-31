@@ -1,8 +1,8 @@
-import { Box, Button, Container, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, Stack, TextField, Typography } from '@mui/material'
-import React, { useEffect, useState } from 'react'
-import ReactConfetti from 'react-confetti';
-import CloseIcon from '@mui/icons-material/Close';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import CloseIcon from '@mui/icons-material/Close';
+import { Box, Button, Container, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, Stack, TextField, Typography } from '@mui/material';
+import { useState } from 'react';
+import ReactConfetti from 'react-confetti';
 
 const ChatbotIntegration = ({ onNext, onBack }) => {
     const [integrationStatus, setIntegrationStatus] = useState(null);

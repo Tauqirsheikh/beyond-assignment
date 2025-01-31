@@ -1,7 +1,6 @@
-import React from 'react'
+import { TextBox } from '@/components/form'
 import { LoadingButton } from '@mui/lab'
-import { Box, Grid2, Typography } from '@mui/material'
-import { PasswordBox, TextBox } from '@/components/form'
+import { Grid2, Typography } from '@mui/material'
 
 const OrganizationForm = ({ formik }) => {
     return (

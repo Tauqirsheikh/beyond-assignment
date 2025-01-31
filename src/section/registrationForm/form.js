@@ -1,7 +1,6 @@
-import React from 'react'
-import { LoadingButton } from '@mui/lab'
-import { Box, Button, Divider, Grid2, Stack, TextField, Typography } from '@mui/material'
-import { PasswordBox, TextBox } from '@/components/form'
+import { PasswordBox, TextBox } from '@/components/form';
+import { LoadingButton } from '@mui/lab';
+import { Divider, Grid2, Typography } from '@mui/material';
 import { GoogleLogin } from '@react-oauth/google';
 
 const RegistrationForm = ({ formik, handleGoogleSuccess, handleGoogleFailure }) => {

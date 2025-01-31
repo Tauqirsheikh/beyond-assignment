@@ -12,11 +12,11 @@ export default function App(props) {
           ChatBot
         </title>
       </Head>
-      <GoogleOAuthProvider>
-        <ThemeProvider>
+      <ThemeProvider>
+        <GoogleOAuthProvider>
           <Component {...pageProps} />
-        </ThemeProvider>
-      </GoogleOAuthProvider>
+        </GoogleOAuthProvider>
+      </ThemeProvider>
     </>
   )
 }

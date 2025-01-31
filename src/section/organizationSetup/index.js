@@ -1,9 +1,9 @@
-import { Box, Button, Card, CardContent, Container, Grid, Grid2, Typography } from '@mui/material';
-import React, { useState } from 'react'
-import OrganizationForm from './form';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { Box, Button, Card, CardContent, Container, Grid2, Typography } from '@mui/material';
 import { useFormik } from 'formik';
 import Link from 'next/link';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { useState } from 'react';
+import OrganizationForm from './form';
 
 const OrganizationSetup = ({ onNext, onBack }) => {
     const [pages, setPages] = useState([
