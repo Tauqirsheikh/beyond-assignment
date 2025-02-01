@@ -27,4 +27,7 @@ name
 email
 password
 ```
+### Which technologies I used in this project
+I have use next.js page routing with material-UI framework. Use formik for form validation. Create component for textboxe and password box which are reusable and can access them easily. The UI is fully mobile responsive.
+
 note:- continue with google is not working because I don't have any client_Id to login it.
